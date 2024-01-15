@@ -1,0 +1,22 @@
+nav
+    @include flex(row, space-between, center)
+    padding: 8px 20px
+    background-color: $main-color
+    position: sticky
+    z-index: 3
+    top: 0
+    @include font(18px,200,$text-colorsecond)
+    div
+        @include flex(row,center,center)
+        cursor: pointer
+        transition: text-decoration 0.5s, font-weight 0.5s
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    .menu-mobil
+        @include flex(row, center, center)               
+    .menu-pc
+        display: none
+    p:hover
+        text-decoration: underline
+        font-weight: 900
+
+

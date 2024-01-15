@@ -1,0 +1,12 @@
+@mixin flex($orientation: row, $primary-axis: auto, $secondary-axis: auto, $gap: 20px)
+  display: flex
+  flex-direction: $orientation
+  justify-content: $primary-axis
+  align-items: $secondary-axis
+  gap: $gap
+
+@mixin font($size,$weight,$color)
+  font-size: $size
+  font-weight: $weight
+  color: $color
+    
